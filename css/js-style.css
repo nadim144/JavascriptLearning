@@ -1,0 +1,43 @@
+*{
+    margin: 5px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(232, 255, 255);
+}
+
+.maincontainer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    border: 1px solid red;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: initial;
+}
+
+.maincontainer h3{
+    width: 99%;
+    display: block;
+    /* font-weight: bold; */
+}
+.chapterindex{
+    border: 1px solid blue;
+    flex-grow: 1;
+    justify-self:center;
+    align-self: center;
+}
+.materialcontent{
+    border: 1px solid green;
+    flex-grow: 5;
+    align-self: center;
+}
+.maincontainer ul{
+    text-decoration: none;
+    list-style: none;
+}
+.maincontainer ul li{
+    padding-left: 8px;
+}
