@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Variables</title>
+    <link rel="stylesheet" href="/css/js-style.css">
+    <script>
+
+        //Conception: suppouse we need to print 3 times Yahoo Baba for we have to write 3 times Yahoo Baba :- This is not a good practice instead of that we can use variable.
+        document.write("Yahoo Baba ");
+        document.write("Yahoo Baba ");
+        document.write("Yahoo Baba <br>");   //putting one breack point to looks better.
+
+        // Using variable, Let's take a variable a and use in all document.write() method. Advantage of this is suppouse we need to change string value from Yahoo Baba to Yahoo Baba's, In that case we need not to change to all document.write() method, just change variable value only. 
+        var a = "Yahoo Baba's "; // var is keyword to decalare a veriable for all the data type.
+        document.write(a);
+        document.write(a);
+        document.write(a);
+
+        /*How many type of variable in javascript : There are three types of variable in javascript*/
+        /*
+            -> var : As above seen how to use var variable. // var nValue = 10; or var a = "Yahoo Baba's"
+            -> let
+            -> const
+            We will learn all the type of variable one by one.
+        */
+
+        document.write("<br><br>");
+
+        //*************************************************************************
+        // var in details:
+        var x;  /*variable declared here not assign any value so, it display "undefined"*/
+        document.write(x);
+
+        x = "Nadim Ahmad";          // Assigning value to variable.
+        document.write("<br>");     //Break line
+        document.write(x);          //Display that value
+
+        //variable declare and assigned as well:
+        var nVal = "Self Learning Javascript"; //decalare and assign it as well.
+        var nVal = "Again declaration";        //it will overwrite previous value if variable name is same .
+        document.write("<br>");                //Break line
+        document.write(nVal);                  //Display that value
+
+
+        //*************************************************************************
+        /*let variable*/
+        /*only one difference in between var and let, In let we can not redeclare same variable name with let however we can reassign the value. See example*/
+        let xVal = "Hello";
+        //let xVal = "Hi";   
+
+        /*Error : ch-5-JavaScriptVariables.html:51 Uncaught SyntaxError: Identifier 'x' has already been declared*/
+        xVal = "Baba"       //Re-assigment happening.
+
+        document.write("<br>");
+        document.write(xVal);
+
+        //*************************************************************************
+        /*const variable*/
+        /*for const declaration and assignment must should happen together and we can not re-assign value to variable.*/
+
+        const pi = 3.147    //Correct
+        //pi= 300;          //Uncaught TypeError: Assignment to constant variable.
+        document.write("<br>");
+        document.write(pi);
+
+        //*************************************************************************
+        /*Data Types*/
+
+        var x = "Hello World";  //String
+        var x = 25;             //Number
+        var x = true;           //Boolean 
+        var x = ["HTML", "CSS", "JS"];  //Array
+        var x = { first: "Jane", last: "Doe" }; //Object
+        var x = null;           //Null
+        var x;                  //Undefined
+
+        //Q: How to find type of variable?
+        /*Ans: There is typeof inbuild fuction of javascript which find the type of variable.Seeexample below:*/
+        //Example 1:
+        var str1 = "Hello World";
+        document.write("<br>");
+        document.write(typeof str1);
+
+        //Example 2:
+        var str2;       //Undefined
+        document.write("<br>");
+        document.write(typeof str2);
+
+        //Example 3:
+        var str3 = true;
+        document.write("<br>");
+        document.write(typeof str3);
+
+        //Example 4:
+        var str4 = ["HTML", "CSS", "JS"];
+        document.write("<br>");
+        document.write(typeof str4);
+
+        //Example 5:
+        var str5 = 25;
+        document.write("<br>");
+        document.write(typeof str5, typeof str4);
+
+    </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
