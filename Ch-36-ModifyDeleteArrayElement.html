@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify & Delete Array Element.</title>
+    <link rel="stylesheet" href="/css/js-style.css">
+    <script>
+
+        var arr = ["Nadim", 32, "Male"];
+
+        //let's print array.
+        document.write(arr + "<br>");
+
+        //Now we will change the Name and Age.
+        arr[0] = "Bholu";
+        arr[1] = 33;    
+        //Now let's again print the changed array.
+        document.write(arr + "<br>");
+
+
+        //Now let's we will delete the element based on index. 
+        // Javascript provide this functonality by "delete arr[index]"
+
+        delete arr[1]; // It will value of index 1 from arr array. and delete value become undefined.
+
+        //Let's have print again to verify it. 
+        document.write(arr + "<br>")
+
+        document.write(arr[1] + "<br>");    // Undefined
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

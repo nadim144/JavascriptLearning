@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Dimentiona Array:</title>
+    <link rel="stylesheet" href="/css/js-style.css">
+    <script>
+        //MultiDimentional Array.
+        var arr = [
+            ["Nadim", 32, "Male", "B.Tech"],
+            ["Mumtaz", 35, "Male", "MCA"],
+            ["Ranu", 24, "Male", "BA"],
+            ["Sony", 25, "Female", "MA"],
+            ["Sony", 25, "Female", "" ],
+            ["Sony", 25,"" , "MCA"],
+            ["Sony", 25, "Female", "MCA"]
+        ];
+
+        document.write(arr + "<br>"); //Normally printing of entire 2D array.
+        //*************************************************************************
+        //Using for loo. in tabel format.
+        document.write("<table border = '1px' cellspacing = '0'>"); //Table tag with border 1 and Cellspacing 0
+        for (var xIndex = 0; xIndex < 4; xIndex++) {
+            document.write("<tr>");     //Table Row Tag
+            for (var yIndex = 0; yIndex < 4; yIndex++) {
+                document.write("<td>" + arr[xIndex][yIndex] + "</td>");     //Table data Tag.
+            }
+            document.write("</tr>");    //End Table row Tag.
+        }
+        document.write("</table>"); //End Table tag with border 1 and Cellspacing 0
+
+        document.write("<br><br>");
+
+
+        //****************************************************************************
+        //Displaying table with array length functionality.
+        //Using array lenght. (arr.length)
+        document.write("<table border = '1px' cellspacing = '0'>");
+        for (var a = 0; a < arr.length; a++) 
+        {
+            document.write("<tr>");
+            for (var b = 0; b < arr[a].length; b++) 
+            {
+                document.write("<td>" + arr[a][b] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <img src="/img/multiDArray1.JPG" alt="">
+        <img src="/img/multiDArray2.JPG" alt="">
+    </div>
+</body>
+
+</html>

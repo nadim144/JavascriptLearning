@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/js-style.css">
+    <script>
+        //Global variable
+        var size = 3;
+
+        //1. Dynamic creation of array. 
+        var a = new Array();    //Dynamical array creation for n number of elements. or constructor method.
+
+        var a = new Array(10, 20, 30, 40, 50); //Dynaic array creation as well initialization.
+
+        // now print array value.
+        document.write(a + "<br><br>"); 
+
+        //now print array value using for loop with <ul> tag.
+        for(var index = 0; index < 5; index++)
+        {
+            document.write("<ul>");
+            document.write("<li>" + a[index] + "</li>");
+            document.write("</ul>");
+        }
+
+        //2. Now, explicitly assign value to the array based on index.
+        a[1] = "Nadim";
+        a[2] = true;
+        a[4] = null;
+
+        document.write("<br><br>"); //print newline 
+        for(var index = 0; index < 5; index++)
+        {
+            document.write("<ul>");
+            document.write("<li>" + a[index] + "</li>");
+            document.write("</ul>");
+        }
+
+
+        //***************************************************************
+        //3. Initialize array value using user input. We will use prompt() for it.
+
+        document.write("<br><br>"); //print newline 
+
+        for(var i = 0; i < 5; i++)
+        {
+            a[i] =  prompt("Enter the value :" );
+        }
+        //Printing all array value collected by user input.
+        for(var index = 0; index < 5; index++)
+        {
+            document.write("<ul>");
+            document.write("<li>" + a[index] + "</li>");
+            document.write("</ul>");
+        }
+
+        //4. Define array size
+        document.write("<br><br>"); //print newline 
+        var arr = new Array(size);
+
+        for(var i = 0; i < size; i++)
+        {
+            arr[i] =  prompt("Enter the value for fixed size array:" );
+        }
+        //Printing all array value collected by user input.
+        for(var index = 0; index < size; index++)
+        {
+            document.write("<ul>");
+            document.write("<li>" + arr[index] + "</li>");
+            document.write("</ul>");
+        }
+
+
+
+    </script>
+    <title>Array 2:</title>
+</head>
+<body>
+    
+</body>
+</html>

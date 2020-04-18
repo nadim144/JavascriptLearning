@@ -6,12 +6,24 @@
     <title>Function First Tutorial In Javascript</title>
     <link rel="stylesheet" href="/css/js-style.css">
     <script>
+
+        //Function with parameter.
         function DisplayfullName(first, second)
         {
             document.write(first + " " + second);
         }
 
         DisplayfullName("Nadim", "Ahmad");
+
+        // Function with return value.
+        function fnAdd(first, second)
+        {
+            var sum = first + second;
+            return sum;
+        }
+
+        alert(fnAdd(10,20));
+
     </script>
 </head>
 <body>

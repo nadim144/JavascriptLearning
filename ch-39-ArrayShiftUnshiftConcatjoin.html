@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array : Shift, Unshift, Concat & Join</title>
+    <link rel="stylesheet" href="/css/js-style.css">
+    <script>
+        //Shift() & unshift()
+        var arr = ["Sanjay", "Aman", "Rehman", "Karan"];
+        document.write("Origial array: " +arr + "<br><br>");
+
+
+        //As we know that pop() & push() delete element of an array from last position alway. In similler way
+        //If we to add and delete element from 1st positio of array than we need to use shift() & Unshift().
+
+        //shift() - delete element from 1st position 
+        arr.shift(); //1st position element has been deleted and all the elements shiftted.
+        document.write("shift() : " +arr + "<br><br>");
+
+        //unshift() - add an element to 1st position to an array.
+        arr.unshift("Nadim");
+        document.write("unshift() : " +arr + "<br><br>");
+
+        //concat()
+
+        var barr = arr.concat("Bholu", "Ahmad");
+        document.write("concat() : " +barr + "<br><br>");
+
+        var b = ["Sonu", "Monu"];
+        var c = arr.concat(b);
+
+        document.write("unshift() : " +c + "<br><br>");
+
+        //join() : it is convert array into string with separator.
+        var d = arr.join("-");  //Here space is saparator.
+        document.write("join() : " + d + "<br><br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
