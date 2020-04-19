@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Foreach Loop</title>
+    <link rel="stylesheet" href="/css/js-style.css">
+    <script>
+        var arr = ["Sanjay", "Aman", "Rehman", "Neha"];
+        document.write(arr + "<br><br>");
+        
+        //forEach Loop with inbuild fuction
+        arr.forEach(function(value, index){
+            document.write(index + ". " + value + "<br>");
+        })
+
+
+        document.write("<br><br>");
+
+        //forEach Loop with defined function
+        function loop(value, index)
+        {
+            document.write(index + ". " + value + "<br>");
+        }
+
+        arr.forEach(loop);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
